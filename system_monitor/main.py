@@ -1,7 +1,10 @@
 import psutil
 import time
+import os
 
 while True:
+    os.system('cls')
+    
     cpu = psutil.cpu_percent()
     ram = psutil.virtual_memory()
     disk = psutil.disk_usage('C:\\')
@@ -15,6 +18,3 @@ while True:
     print(f'DISK: {disk.percent}%')
     print(f'PROCESSES: {num_process}')
     print('=========================')
-    time.sleep(1)
-    print('Atualizando...')
-    time.sleep(10)
