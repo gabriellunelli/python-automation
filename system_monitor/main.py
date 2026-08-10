@@ -18,3 +18,4 @@ while True:
     print(f'DISK: {disk.percent}%')
     print(f'PROCESSES: {num_process}')
     print('=========================')
+    time.sleep(1)
